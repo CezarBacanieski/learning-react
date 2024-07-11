@@ -16,7 +16,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
           value={time.cor}
           type='color'
           className='input-color'
-          onChange={(event) => mudarCor(event.target.value, time.nome)}
+          onChange={(event) => mudarCor(event.target.value, time.id)}
         ></input>
         <h3 style={{ borderColor: time.cor }}>{time.nome}</h3>
         <div className='colaboradores'>
